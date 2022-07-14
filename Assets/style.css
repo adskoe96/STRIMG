@@ -1,297 +1,45 @@
 .custom-btn {
-	padding: 10px 25px;
-	font-family: 'Roboto', sans-serif;
-	font-weight: 500;
-	background: transparent;
-	outline: none !important;
-	cursor: pointer;
-	-webkit-transition: all 0.3s ease;
-	transition: all 0.3s ease;
-	position: relative;
-	display: inline-block;
+    padding: 10px 25px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    outline: none !important;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
 }
 
 .btn-12 {
-	background-color: #000000a8;
-	border: 2px solid rgba(66, 0, 0, 0.514);
-	color: #fff;
-	z-index: 1;
-  }
-  .btn-12:after {
-	position: absolute;
-	content: "";
-	width: 100%;
-	height: 0;
-	bottom: 0;
-	left: 0;
-	z-index: -1;
-	background: rgba(56, 0, 0, 0.568);
-	-webkit-transition: all 0.3s ease;
-	transition: all 0.3s ease;
-  }
-  .btn-12:hover {
-	color: rgb(255, 0, 0);
-  }
-  .btn-12:hover:after {
-	top: 0;
-	height: 100%;
-  }
-  .btn-12:active {top: 2px;}
+    background-color: #000000a8;
+    border: 2px solid rgba(66, 0, 0, 0.514);
+    color: #fff;
+    z-index: 1;
+}
 
-.glitch {
-	position: relative;
-	color: white;
-	font-size: 3em;
-	letter-spacing: 0.5em;
-	animation: glitch-skew 1s infinite linear alternate-reverse;
-  }
-  .glitch::before {
-	content: attr(data-text);
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	left: 2px;
-	text-shadow: -2px 0 #ff00c1;
-	clip: rect(44px, 450px, 56px, 0);
-	animation: glitch-anim 5s infinite linear alternate-reverse;
-  }
-  .glitch::after {
-	content: attr(data-text);
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	left: -2px;
-	text-shadow: -2px 0 #00fff9, 2px 2px #ff00c1;
-	animation: glitch-anim2 1s infinite linear alternate-reverse;
-  }
-  @keyframes glitch-anim {
-	0% {
-	  clip: rect(8px, 9999px, 44px, 0);
-	  transform: skew(0.49deg);
-	}
-	5% {
-	  clip: rect(95px, 9999px, 62px, 0);
-	  transform: skew(0.17deg);
-	}
-	10% {
-	  clip: rect(81px, 9999px, 9px, 0);
-	  transform: skew(0.46deg);
-	}
-	15% {
-	  clip: rect(78px, 9999px, 56px, 0);
-	  transform: skew(0.18deg);
-	}
-	20% {
-	  clip: rect(77px, 9999px, 22px, 0);
-	  transform: skew(0.65deg);
-	}
-	25% {
-	  clip: rect(60px, 9999px, 65px, 0);
-	  transform: skew(0.4deg);
-	}
-	30% {
-	  clip: rect(71px, 9999px, 60px, 0);
-	  transform: skew(0.4deg);
-	}
-	35% {
-	  clip: rect(32px, 9999px, 22px, 0);
-	  transform: skew(0.34deg);
-	}
-	40% {
-	  clip: rect(48px, 9999px, 64px, 0);
-	  transform: skew(0.59deg);
-	}
-	45% {
-	  clip: rect(56px, 9999px, 6px, 0);
-	  transform: skew(0.21deg);
-	}
-	50% {
-	  clip: rect(63px, 9999px, 10px, 0);
-	  transform: skew(0.47deg);
-	}
-	55% {
-	  clip: rect(14px, 9999px, 46px, 0);
-	  transform: skew(0.76deg);
-	}
-	60% {
-	  clip: rect(80px, 9999px, 76px, 0);
-	  transform: skew(0.58deg);
-	}
-	65% {
-	  clip: rect(40px, 9999px, 12px, 0);
-	  transform: skew(0.36deg);
-	}
-	70% {
-	  clip: rect(49px, 9999px, 25px, 0);
-	  transform: skew(0.95deg);
-	}
-	75% {
-	  clip: rect(74px, 9999px, 49px, 0);
-	  transform: skew(0.3deg);
-	}
-	80% {
-	  clip: rect(33px, 9999px, 81px, 0);
-	  transform: skew(0.95deg);
-	}
-	85% {
-	  clip: rect(28px, 9999px, 9px, 0);
-	  transform: skew(0.86deg);
-	}
-	90% {
-	  clip: rect(90px, 9999px, 10px, 0);
-	  transform: skew(0.34deg);
-	}
-	95% {
-	  clip: rect(31px, 9999px, 21px, 0);
-	  transform: skew(0.4deg);
-	}
-	100% {
-	  clip: rect(18px, 9999px, 74px, 0);
-	  transform: skew(0.63deg);
-	}
-  }
-  @keyframes glitch-anim2 {
-	0% {
-	  clip: rect(47px, 9999px, 23px, 0);
-	  transform: skew(0.31deg);
-	}
-	5% {
-	  clip: rect(56px, 9999px, 25px, 0);
-	  transform: skew(0.7deg);
-	}
-	10% {
-	  clip: rect(92px, 9999px, 47px, 0);
-	  transform: skew(0.61deg);
-	}
-	15% {
-	  clip: rect(13px, 9999px, 6px, 0);
-	  transform: skew(0.95deg);
-	}
-	20% {
-	  clip: rect(42px, 9999px, 63px, 0);
-	  transform: skew(0.94deg);
-	}
-	25% {
-	  clip: rect(55px, 9999px, 7px, 0);
-	  transform: skew(0.3deg);
-	}
-	30% {
-	  clip: rect(14px, 9999px, 8px, 0);
-	  transform: skew(0.52deg);
-	}
-	35% {
-	  clip: rect(86px, 9999px, 74px, 0);
-	  transform: skew(0.03deg);
-	}
-	40% {
-	  clip: rect(75px, 9999px, 79px, 0);
-	  transform: skew(0.69deg);
-	}
-	45% {
-	  clip: rect(60px, 9999px, 57px, 0);
-	  transform: skew(0.27deg);
-	}
-	50% {
-	  clip: rect(38px, 9999px, 45px, 0);
-	  transform: skew(0.03deg);
-	}
-	55% {
-	  clip: rect(5px, 9999px, 41px, 0);
-	  transform: skew(0.25deg);
-	}
-	60% {
-	  clip: rect(83px, 9999px, 27px, 0);
-	  transform: skew(0.61deg);
-	}
-	65% {
-	  clip: rect(86px, 9999px, 39px, 0);
-	  transform: skew(0.6deg);
-	}
-	70% {
-	  clip: rect(35px, 9999px, 43px, 0);
-	  transform: skew(0.3deg);
-	}
-	75% {
-	  clip: rect(4px, 9999px, 56px, 0);
-	  transform: skew(0.27deg);
-	}
-	80% {
-	  clip: rect(41px, 9999px, 82px, 0);
-	  transform: skew(0.81deg);
-	}
-	85% {
-	  clip: rect(74px, 9999px, 39px, 0);
-	  transform: skew(0.82deg);
-	}
-	90% {
-	  clip: rect(41px, 9999px, 25px, 0);
-	  transform: skew(0.77deg);
-	}
-	95% {
-	  clip: rect(60px, 9999px, 87px, 0);
-	  transform: skew(0.99deg);
-	}
-	100% {
-	  clip: rect(74px, 9999px, 42px, 0);
-	  transform: skew(0.08deg);
-	}
-  }
-  @keyframes glitch-skew {
-	0% {
-	  transform: skew(2deg);
-	}
-	10% {
-	  transform: skew(-4deg);
-	}
-	20% {
-	  transform: skew(-2deg);
-	}
-	30% {
-	  transform: skew(-2deg);
-	}
-	40% {
-	  transform: skew(0deg);
-	}
-	50% {
-	  transform: skew(-2deg);
-	}
-	60% {
-	  transform: skew(4deg);
-	}
-	70% {
-	  transform: skew(-4deg);
-	}
-	80% {
-	  transform: skew(3deg);
-	}
-	90% {
-	  transform: skew(-4deg);
-	}
-	100% {
-	  transform: skew(-1deg);
-	}
+.btn-12:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background: rgba(56, 0, 0, 0.568);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
-.blurry-text {
-	font-style: normal;
-	font-size: 15px;
-	text-align: center;
-	color: transparent;
-	text-shadow: rgb(255, 255, 255) 0 0 15px;
-	transition: 0.4s;
-	font-family: HelveticaNeue;
+
+.btn-12:hover {
+    color: rgb(255, 0, 0);
 }
-.blurry-text:hover{
-	color: rgb(255, 255, 255);
-  	text-shadow: none;
+
+.btn-12:hover:after {
+    top: 0;
+    height: 100%;
 }
-.secret-btn{
-	background-color: #00000007;
-	color: #00000010;
-	right: 100%;
-	top: 100%;
-	border: 0px;
+
+.btn-12:active {
+    top: 2px;
 }
